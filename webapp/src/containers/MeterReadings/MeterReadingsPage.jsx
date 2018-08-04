@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 
 import MeterReadings from "./MeterReadings";
-import meterReadingsData from "../../data/meterReadingsSample.json";
-import { getMeterReadingApi } from "../../api/meterReading";
+import { getMeterReadingApi } from "../../api/meterReadingApi";
 
 class MeterReadingsPage extends Component {
   constructor(props) {
