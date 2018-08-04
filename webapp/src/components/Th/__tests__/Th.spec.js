@@ -1,12 +1,12 @@
 import React from "react";
 import { shallow } from "enzyme";
 
-import H2 from "../H2";
+import Th from "../Th";
 
-describe("Component title H2 - <H2></H2>", () => {
+describe("Component Th - <Th></Th>", () => {
   it("should render the text", () => {
-    const value = "This is a title";
-    const component = shallow(<H2>{value}</H2>);
+    const value = "Date";
+    const component = shallow(<Th>{value}</Th>);
     expect(component.contains(value)).toBe(true);
   });
 });

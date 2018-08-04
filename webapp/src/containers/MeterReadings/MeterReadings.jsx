@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 
-import MeterReadingsList from "./MeterReadingsList";
+import MeterReadingsTable from "./MeterReadingsTable";
 import { EnergyUsageChart } from "../../components";
 import { H2 } from "../../components";
 import { getEnergyUsageData } from "../../utils";
@@ -17,7 +17,7 @@ class MeterReadings extends Component {
         <EnergyUsageChart data={energyUsageData} />
 
         <H2>Meter Readings</H2>
-        <MeterReadingsList list={meterReadings} />
+        <MeterReadingsTable list={meterReadings} />
       </div>
     );
   }
