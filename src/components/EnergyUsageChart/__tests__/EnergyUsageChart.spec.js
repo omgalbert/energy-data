@@ -4,7 +4,7 @@ import { shallow } from "enzyme";
 import { colors } from "../../../utils";
 import EnergyUsageChart from "../EnergyUsageChart";
 
-describe("Component EnergyUsageChart - <EnergyUsageChart></EnergyUsageChart>", () => {
+describe("Component EnergyUsageChart - <EnergyUsageChart></EnergyUsageChart> . ", () => {
   it("should render BarChart", () => {
     const energyUsageData = [];
     const component = shallow(<EnergyUsageChart data={energyUsageData} />);
