@@ -19,6 +19,6 @@ describe("MeterReadings Component", () => {
   it("should have MeterReadingsList Component", () => {
     const meterReadings = [];
     const component = shallow(<MeterReadings meterReadings={meterReadings} />);
-    expect(component.find("MeterReadingsList").length).toEqual(1);
+    expect(component.find("MeterReadingsTable").length).toEqual(1);
   });
 });
