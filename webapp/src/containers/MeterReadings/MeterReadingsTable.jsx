@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 
 import MeterReadingsRow from "./MeterReadingsRow";
 import { Table } from "../../components";
-import { Tr } from "../../components";
 import { Th } from "../../components";
 
 class MeterReadingsTable extends Component {
@@ -13,11 +12,11 @@ class MeterReadingsTable extends Component {
     return (
       <Table>
         <tbody>
-          <Tr>
+          <tr>
             <Th>Date</Th>
             <Th>Reading</Th>
             <Th>Unit</Th>
-          </Tr>
+          </tr>
           {list.map(reading => (
             <MeterReadingsRow key={reading.readingDate} item={reading} />
           ))}
