@@ -1,2 +1,7 @@
 export { default as colors } from "./colors";
-export { default as getEnergyUsageData } from "./helper";
+export {
+  getEnergyUsageData,
+  isEndOfMonth,
+  getDiffInDays,
+  getDaysUntilMonthEnd
+} from "./helper";

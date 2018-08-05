@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import moment from "moment";
 
 import { Td } from "../../components";
 
@@ -8,7 +9,7 @@ class MeterReadingsRow extends Component {
     const { item } = this.props;
     return (
       <tr key={item.readingDate}>
-        <Td>{item.readingDate}</Td>
+        <Td>{moment(item.readingDate).format("DD-MM-Y")}</Td>
         <Td>{item.cumulative}</Td>
         <Td>{item.unit}</Td>
       </tr>
