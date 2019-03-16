@@ -1,5 +1,5 @@
 const URL_API =
-  "https://storage.googleapis.com/bulb-interview/meterReadingsReal.json";
+  'https://raw.githubusercontent.com/omgalbert/energy-data/master/src/data/meterReadingsSample.json';
 
 export function getMeterReadingApi() {
   return fetch(URL_API)
